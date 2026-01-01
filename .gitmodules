@@ -1,24 +1,29 @@
 [submodule "pytch-tutorials"]
 	path = pytch-tutorials
-	url = ../pytch-tutorials
+	url = git@github.com:pytchlang/pytch-tutorials
 [submodule "pytch-vm"]
 	path = pytch-vm
-	url = ../pytch-vm
+	url = git@github.com:CreatedBySeb/pytch-vm.git
+	branch = microbit-jr
 [submodule "pytch-build"]
 	path = pytch-build
-	url = ../pytch-build
+	url = git@github.com:pytchlang/pytch-build
 [submodule "pytch-webapp"]
 	path = pytch-webapp
-	url = ../pytch-webapp
+	url = git@github.com:CreatedBySeb/pytch-webapp.git
+	branch = microbit-jr
 [submodule "pytch-website"]
 	path = pytch-website
-	url = ../pytch-website
+	url = git@github.com:pytchlang/pytch-website
 [submodule "pytch-medialib"]
 	path = pytch-medialib
-	url = ../pytch-medialib
+	url = git@github.com:pytchlang/pytch-medialib
 [submodule "pytch-specimens"]
 	path = pytch-specimens
-	url = ../pytch-specimens
+	url = git@github.com:pytchlang/pytch-specimens
 [submodule "pytch-static-blobs"]
 	path = pytch-static-blobs
-	url = ../pytch-static-blobs
+	url = git@github.com:pytchlang/pytch-static-blobs
+[submodule "pytch-microbit"]
+	path = pytch-microbit
+	url = git@github.com:CreatedBySeb/pytch-microbit.git
