@@ -7,7 +7,8 @@
 	branch = microbit-jr
 [submodule "pytch-build"]
 	path = pytch-build
-	url = git@github.com:pytchlang/pytch-build
+	url = git@github.com:CreatedBySeb/pytch-build.git
+	branch = microbit-jr
 [submodule "pytch-webapp"]
 	path = pytch-webapp
 	url = git@github.com:CreatedBySeb/pytch-webapp.git

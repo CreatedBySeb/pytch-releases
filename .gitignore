@@ -2,6 +2,8 @@ website-layer/
 build-logs/
 pytch-build-preparation.err
 pytch-build-preparation.out
+pytch-microbit-preparation.err
+pytch-microbit-preparation.out
 pytch-vm-preparation.err
 pytch-vm-preparation.out
 pytch-webapp-preparation.err

@@ -161,6 +161,9 @@ git submodule --quiet update \
         rm -rf pytch-webapp/node_modules \
            pytch-webapp/website-layer/layer-content \
            pytch-webapp/website-layer/layer.zip
+        rm -rf pytch-microbit/node_modules \
+           pytch-microbit/website-layer/layer-content \
+           pytch-microbit/website-layer/layer.zip
         rm -rf pytch-website/venv \
            pytch-website/.venv \
            pytch-website/website-layer/layer-content \
@@ -181,6 +184,12 @@ git submodule --quiet update \
             cd pytch-webapp
             website-layer/make.sh > "$LOGDIR"/pytch-webapp.out 2> "$LOGDIR"/pytch-webapp.err
             >&2 echo Built pytch-webapp layer
+        ) &
+
+        (
+            cd pytch-microbit
+            website-layer/make.sh > "$LOGDIR"/pytch-microbit.out 2> "$LOGDIR"/pytch-microbit.err
+            >&2 echo Built pytch-microbit layer
         ) &
 
         (
@@ -219,7 +228,7 @@ git submodule --quiet update \
         mkdir -p "$containing_dir"
 
         # The tutorials come from 'pytch-build'.
-        contributing_repos=(pytch-vm pytch-webapp pytch-website pytch-build)
+        contributing_repos=(pytch-vm pytch-webapp pytch-microbit pytch-website pytch-build)
 
         all_zips_present=yes
         for repo in "${contributing_repos[@]}"; do

@@ -153,6 +153,19 @@ echo "Initialised submodules"
     echo "Prepared webapp"
 ) &
 
+(
+    echo "Preparing micro:bit ..."
+
+    cd pytch-microbit
+
+    (
+        npm install
+        npm run build
+    ) > "$REPO_ROOT"/pytch-microbit-preparation.out 2> "$REPO_ROOT"/pytch-microbit-preparation.err
+
+    echo "Prepared micro:bit"
+) &
+
 wait
 
 echo
