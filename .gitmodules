@@ -15,7 +15,8 @@
 	branch = microbit-jr
 [submodule "pytch-website"]
 	path = pytch-website
-	url = git@github.com:pytchlang/pytch-website
+	url = git@github.com:CreatedBySeb/pytch-website.git
+	branch = microbit-jr
 [submodule "pytch-medialib"]
 	path = pytch-medialib
 	url = git@github.com:pytchlang/pytch-medialib
